@@ -1,4 +1,12 @@
 #pragma once
+#include <vector>
+#include <stdio.h>
+#include <string.h>
+#include <map>
+#include <unordered_map>
+#include <iostream>
+
+using namespace std;
 
 #define START_FLOWER_INDEX 34  //花牌开始下标
 #define START_ZI_INDEX 27  	   //字牌开始下标
@@ -15,6 +23,20 @@
 
 #define MAX_CARD_NUM 14       //牌的个数
 
+#define MAX_SUM_CARD_NUM  34
+
 #ifndef uint32_t
 #define uint32_t unsigned int 
 #endif
+
+struct CardValue
+{
+	int value;
+	int num;
+	void clear(){
+		value = 0;
+		num = 0;
+	}
+};
+
+typedef vector<CardValue> TblMap;
