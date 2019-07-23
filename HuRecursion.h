@@ -44,4 +44,5 @@ private:
 	//统计牌值
 	void StatisticsCard(char * pCards , char *cardValue);
 };
+	
 }
