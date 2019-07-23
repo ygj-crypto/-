@@ -375,5 +375,4 @@ HuType* CHuRecursion::GetHuType( char cardValue , int &optNum )
 		return NULL;
 	}
 }
-
 }
