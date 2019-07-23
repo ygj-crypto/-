@@ -12,7 +12,7 @@ HuSplit::~HuSplit()
 
 }
 
-//
+//初始化表
 void HuSplit::init(const string &path , const bool is_eye)
 {
 	m_splitTbl.initTable(path, is_eye);
