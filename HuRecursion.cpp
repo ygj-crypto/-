@@ -254,7 +254,7 @@ bool CHuRecursion::CheckColor(char * pCards, bool& HasEyes, int& nGuiCount, int&
 	{
 		remain = nSumCount%3;
 		//没有鬼牌了，如果这类型的牌，要满足3n或者3n+2(已有眼的情况除外)
-		if( remain == 1 || (HasEyes&&remain == 2) ) return false;
+		if(!((HasEyes&& remain == 0) || (HasEyes&&remain == 2)) ) return false;
 	}
 
 	for( int count = 0; count <= nGuiCount; count++ )
