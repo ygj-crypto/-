@@ -26,7 +26,8 @@ HuType huType3[]={//第一个是3牌
 
 HuType huType4[]={//第一个是4牌
 	{4,1,1,false},  
-	{4,2,2,false},  
+	{4,2,2,true},  
+	{4,4,4,false}, 
 	{5,0,0,true},  
 };
 
