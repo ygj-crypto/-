@@ -6,27 +6,28 @@ namespace NHuRecurSion
 {
 
 HuType huType1[]={//第一个是1牌
-	{2,0,0,true},  //1个鬼
-	{1,1,1,false} //2个鬼
+	{1,1,1,false} ,
+	{2,0,0,true},
 };
 
 HuType huType2[]={//第一个是2牌
-	{2,0,0,true}, //不用鬼
-	{3,0,0,false}, //1个鬼
-	{2,2,2,false}  //4个鬼
+	{2,0,0,true},
+	{2,2,2,false},
+	{3,0,0,false},
+	
 };
 
 
 HuType huType3[]={//第一个是3牌
-	{3,0,0,false},  //不用鬼
-	{3,1,1,true},   //2个鬼
+	{3,0,0,false}, 
+	{3,1,1,true},  
 };
 
 
 HuType huType4[]={//第一个是4牌
-	{5,0,0,true},  //1个鬼
-	{4,1,1,false},  //2个鬼
-	{4,2,2,false},  //4个鬼
+	{4,1,1,false},  
+	{4,2,2,false},  
+	{5,0,0,true},  
 };
 
 CHuRecursion::CHuRecursion()
