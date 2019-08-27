@@ -330,12 +330,13 @@ bool CHuRecursion::CheckHu( char * pCards, int startIndex, bool& HasEyes, int& n
 				pCards[startIndex+num] = 0;
 			}
 		}
-
+		
+		bool eye = HasEyes || huType.eye;
 		//还有鬼
 		if( guiNumTmp <= nGuiCount )
 		{
 			int numTmp = nGuiCount-guiNumTmp;
-			ret = CheckHu(pCards, startIndex+1, HasEyes, numTmp);
+			ret = CheckHu(pCards, startIndex+1, eye, numTmp);
 		}
 
 		//还原数据,因为上面不符合
@@ -347,7 +348,7 @@ bool CHuRecursion::CheckHu( char * pCards, int startIndex, bool& HasEyes, int& n
 		//找到可以胡的牌型，如果要寻找所有可以在这里保存数据然后继续循环
 		if( ret )
 		{
-			HasEyes = HasEyes||huType.eye;
+			HasEyes = eye;
 			return true;
 		}
 	}
